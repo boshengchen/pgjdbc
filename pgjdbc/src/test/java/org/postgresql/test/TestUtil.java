@@ -3,12 +3,12 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test;
+package org.kmdsql.test;
 
-import org.postgresql.PGProperty;
-import org.postgresql.core.ServerVersion;
-import org.postgresql.core.Version;
-import org.postgresql.jdbc.PgConnection;
+import org.kmdsql.PGProperty;
+import org.kmdsql.core.ServerVersion;
+import org.kmdsql.core.Version;
+import org.kmdsql.jdbc.PgConnection;
 
 import org.junit.Assert;
 
@@ -94,7 +94,7 @@ public class TestUtil {
       ssl = "&ssl=" + getSSL();
     }
 
-    return "jdbc:postgresql://"
+    return "jdbc:kmdsql://"
         + hostport + "/"
         + database
         + "?ApplicationName=Driver Tests"

@@ -7,11 +7,11 @@
     <relativePath />
   </parent>
 
-  <artifactId>postgresql</artifactId>
+  <artifactId>kmdsql</artifactId>
   <packaging>bundle</packaging>
-  <name>PostgreSQL JDBC Driver - JDBC 4.2</name>
+  <name>KMDSQL JDBC Driver - JDBC 4.2</name>
   <version>42.2.9-SNAPSHOT</version>
-  <description>Java JDBC 4.2 (JRE 8+) driver for PostgreSQL database</description>
+  <description>Java JDBC 4.2 (JRE 8+) driver for KMDSQL database</description>
   <url>https://github.com/pgjdbc/pgjdbc</url>
 
   <licenses>
@@ -96,8 +96,8 @@
               <sourceDirectory>${project.build.sourceDirectory}</sourceDirectory>
               <outputDirectory>${project.build.sourceDirectory}</outputDirectory>
               <keysFile>messages.pot</keysFile>
-              <poDirectory>src/main/java/org/postgresql/translation</poDirectory>
-              <targetBundle>org.postgresql.translation.messages</targetBundle>
+              <poDirectory>src/main/java/org.kmdsql/translation</poDirectory>
+              <targetBundle>org.kmdsql.translation.messages</targetBundle>
               <keywords>-kGT.tr</keywords>
               <msgmergeCmd>msgmerge</msgmergeCmd>
             </configuration>
@@ -121,12 +121,12 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <configuration>
               <excludes combine.children="append">
-                <exclude>org/postgresql/sspi/NTDSAPI.java</exclude>
-                <exclude>org/postgresql/sspi/NTDSAPIWrapper.java</exclude>
-                <exclude>org/postgresql/sspi/SSPIClient.java</exclude>
+                <exclude>org.kmdsql/sspi/NTDSAPI.java</exclude>
+                <exclude>org.kmdsql/sspi/NTDSAPIWrapper.java</exclude>
+                <exclude>org.kmdsql/sspi/SSPIClient.java</exclude>
               </excludes>
               <testExcludes>
-                <exclude>org/postgresql/test/sspi/*.java</exclude>
+                <exclude>org.kmdsql/test/sspi/*.java</exclude>
               </testExcludes>
             </configuration>
           </plugin>
@@ -149,8 +149,8 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <configuration>
               <excludes combine.children="append">
-                <exclude>org/postgresql/osgi/PGBundleActivator.java</exclude>
-                <exclude>org/postgresql/osgi/PGDataSourceFactory.java</exclude>
+                <exclude>org.kmdsql/osgi/PGBundleActivator.java</exclude>
+                <exclude>org.kmdsql/osgi/PGDataSourceFactory.java</exclude>
               </excludes>
               <testExcludes combine.children="append">
                 <exclude>**/PGDataSourceFactoryTest.java</exclude>
@@ -246,7 +246,7 @@
         <configuration>
           <archive>
             <manifestEntries>
-              <Automatic-Module-Name>org.postgresql.jdbc</Automatic-Module-Name>
+              <Automatic-Module-Name>org.kmdsql.jdbc</Automatic-Module-Name>
             </manifestEntries>
           </archive>
         </configuration>
@@ -294,7 +294,7 @@
               <relocations>
                 <relocation>
                   <pattern>com.ongres</pattern>
-                  <shadedPattern>org.postgresql.shaded.com.ongres</shadedPattern>
+                  <shadedPattern>org.kmdsql.shaded.com.ongres</shadedPattern>
                 </relocation>
               </relocations>
             </configuration>

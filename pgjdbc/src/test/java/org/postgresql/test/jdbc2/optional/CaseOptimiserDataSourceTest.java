@@ -3,15 +3,15 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2.optional;
+package org.kmdsql.test.jdbc2.optional;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import org.postgresql.core.BaseConnection;
-import org.postgresql.ds.common.BaseDataSource;
-import org.postgresql.jdbc2.optional.SimpleDataSource;
-import org.postgresql.test.TestUtil;
+import org.kmdsql.core.BaseConnection;
+import org.kmdsql.ds.common.BaseDataSource;
+import org.kmdsql.jdbc2.optional.SimpleDataSource;
+import org.kmdsql.test.TestUtil;
 
 import org.junit.After;
 import org.junit.Before;

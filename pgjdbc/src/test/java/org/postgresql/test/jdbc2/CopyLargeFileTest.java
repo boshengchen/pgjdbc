@@ -3,15 +3,15 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
 import static org.junit.Assert.assertEquals;
 
-import org.postgresql.PGConnection;
-import org.postgresql.copy.CopyManager;
-import org.postgresql.test.TestUtil;
-import org.postgresql.test.util.BufferGenerator;
-import org.postgresql.test.util.StrangeInputStream;
+import org.kmdsql.PGConnection;
+import org.kmdsql.copy.CopyManager;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.test.util.BufferGenerator;
+import org.kmdsql.test.util.StrangeInputStream;
 
 import org.junit.After;
 import org.junit.Before;

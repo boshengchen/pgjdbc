@@ -3,11 +3,11 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.replication;
+package org.kmdsql.replication;
 
-import org.postgresql.core.ServerVersion;
-import org.postgresql.test.TestUtil;
-import org.postgresql.test.jdbc2.CopyBothResponseTest;
+import org.kmdsql.core.ServerVersion;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.test.jdbc2.CopyBothResponseTest;
 
 import org.junit.AssumptionViolatedException;
 import org.junit.BeforeClass;

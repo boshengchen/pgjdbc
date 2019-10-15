@@ -3,16 +3,16 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assume.assumeTrue;
 
-import org.postgresql.test.TestUtil;
-import org.postgresql.util.PGInterval;
-import org.postgresql.util.PGTime;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.util.PGInterval;
+import org.kmdsql.util.PGTime;
 
 import org.junit.Test;
 

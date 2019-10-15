@@ -3,13 +3,13 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import org.postgresql.core.BaseConnection;
-import org.postgresql.test.TestUtil;
+import org.kmdsql.core.BaseConnection;
+import org.kmdsql.test.TestUtil;
 
 import org.junit.After;
 import org.junit.Before;

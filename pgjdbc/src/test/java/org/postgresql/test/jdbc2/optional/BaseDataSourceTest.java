@@ -3,7 +3,7 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2.optional;
+package org.kmdsql.test.jdbc2.optional;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
@@ -12,10 +12,10 @@ import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.fail;
 
-import org.postgresql.PGConnection;
-import org.postgresql.ds.common.BaseDataSource;
-import org.postgresql.test.TestUtil;
-import org.postgresql.test.util.MiniJndiContextFactory;
+import org.kmdsql.PGConnection;
+import org.kmdsql.ds.common.BaseDataSource;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.test.util.MiniJndiContextFactory;
 
 import org.junit.After;
 import org.junit.Before;

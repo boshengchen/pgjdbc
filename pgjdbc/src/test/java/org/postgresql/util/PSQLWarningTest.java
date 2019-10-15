@@ -3,11 +3,11 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.util;
+package org.kmdsql.util;
 
 import static org.junit.Assert.assertTrue;
 
-import org.postgresql.test.TestUtil;
+import org.kmdsql.test.TestUtil;
 
 import org.junit.Test;
 

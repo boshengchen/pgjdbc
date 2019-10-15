@@ -3,13 +3,13 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.socketfactory;
+package org.kmdsql.test.socketfactory;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-import org.postgresql.PGProperty;
-import org.postgresql.test.TestUtil;
+import org.kmdsql.PGProperty;
+import org.kmdsql.test.TestUtil;
 
 import org.junit.After;
 import org.junit.Before;

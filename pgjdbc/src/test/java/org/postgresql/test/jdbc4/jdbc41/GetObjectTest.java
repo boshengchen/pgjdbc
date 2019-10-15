@@ -3,26 +3,26 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc4.jdbc41;
+package org.kmdsql.test.jdbc4.jdbc41;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
-import org.postgresql.core.BaseConnection;
-import org.postgresql.core.ServerVersion;
-import org.postgresql.geometric.PGbox;
-import org.postgresql.geometric.PGcircle;
-import org.postgresql.geometric.PGline;
-import org.postgresql.geometric.PGlseg;
-import org.postgresql.geometric.PGpath;
-import org.postgresql.geometric.PGpoint;
-import org.postgresql.geometric.PGpolygon;
-import org.postgresql.test.TestUtil;
-import org.postgresql.util.PGInterval;
-import org.postgresql.util.PGmoney;
-import org.postgresql.util.PGobject;
+import org.kmdsql.core.BaseConnection;
+import org.kmdsql.core.ServerVersion;
+import org.kmdsql.geometric.PGbox;
+import org.kmdsql.geometric.PGcircle;
+import org.kmdsql.geometric.PGline;
+import org.kmdsql.geometric.PGlseg;
+import org.kmdsql.geometric.PGpath;
+import org.kmdsql.geometric.PGpoint;
+import org.kmdsql.geometric.PGpolygon;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.util.PGInterval;
+import org.kmdsql.util.PGmoney;
+import org.kmdsql.util.PGobject;
 
 import org.junit.After;
 import org.junit.Before;

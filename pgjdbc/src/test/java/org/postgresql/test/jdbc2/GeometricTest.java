@@ -3,23 +3,23 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import org.postgresql.core.ServerVersion;
-import org.postgresql.geometric.PGbox;
-import org.postgresql.geometric.PGcircle;
-import org.postgresql.geometric.PGline;
-import org.postgresql.geometric.PGlseg;
-import org.postgresql.geometric.PGpath;
-import org.postgresql.geometric.PGpoint;
-import org.postgresql.geometric.PGpolygon;
-import org.postgresql.test.TestUtil;
-import org.postgresql.util.PGobject;
-import org.postgresql.util.PSQLException;
+import org.kmdsql.core.ServerVersion;
+import org.kmdsql.geometric.PGbox;
+import org.kmdsql.geometric.PGcircle;
+import org.kmdsql.geometric.PGline;
+import org.kmdsql.geometric.PGlseg;
+import org.kmdsql.geometric.PGpath;
+import org.kmdsql.geometric.PGpoint;
+import org.kmdsql.geometric.PGpolygon;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.util.PGobject;
+import org.kmdsql.util.PSQLException;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

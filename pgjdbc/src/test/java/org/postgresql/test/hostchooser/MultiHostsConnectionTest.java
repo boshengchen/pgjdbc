@@ -3,7 +3,7 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.hostchooser;
+package org.kmdsql.test.hostchooser;
 
 import static java.lang.Integer.parseInt;
 import static java.util.Arrays.asList;
@@ -13,19 +13,19 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 import static org.junit.Assume.assumeTrue;
-import static org.postgresql.hostchooser.HostRequirement.any;
-import static org.postgresql.hostchooser.HostRequirement.master;
-import static org.postgresql.hostchooser.HostRequirement.preferSecondary;
-import static org.postgresql.hostchooser.HostRequirement.secondary;
-import static org.postgresql.hostchooser.HostStatus.Master;
-import static org.postgresql.hostchooser.HostStatus.Secondary;
-import static org.postgresql.test.TestUtil.closeDB;
+import static org.kmdsql.hostchooser.HostRequirement.any;
+import static org.kmdsql.hostchooser.HostRequirement.master;
+import static org.kmdsql.hostchooser.HostRequirement.preferSecondary;
+import static org.kmdsql.hostchooser.HostRequirement.secondary;
+import static org.kmdsql.hostchooser.HostStatus.Master;
+import static org.kmdsql.hostchooser.HostStatus.Secondary;
+import static org.kmdsql.test.TestUtil.closeDB;
 
-import org.postgresql.hostchooser.GlobalHostStatusTracker;
-import org.postgresql.hostchooser.HostRequirement;
-import org.postgresql.test.TestUtil;
-import org.postgresql.util.HostSpec;
-import org.postgresql.util.PSQLException;
+import org.kmdsql.hostchooser.GlobalHostStatusTracker;
+import org.kmdsql.hostchooser.HostRequirement;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.util.HostSpec;
+import org.kmdsql.util.PSQLException;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -162,7 +162,7 @@ public class MultiHostsConnectionTest {
     }
 
     StringBuilder sb = new StringBuilder();
-    sb.append("jdbc:postgresql://");
+    sb.append("jdbc:kmdsql://");
     for (String target : targets) {
       sb.append(target).append(',');
     }

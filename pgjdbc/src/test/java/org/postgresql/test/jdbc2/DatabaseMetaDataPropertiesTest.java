@@ -3,14 +3,14 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import org.postgresql.test.TestUtil;
+import org.kmdsql.test.TestUtil;
 
 import org.junit.After;
 import org.junit.Before;
@@ -21,7 +21,7 @@ import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 
 /*
- * TestCase to test the internal functionality of org.postgresql.jdbc2.DatabaseMetaData's various
+ * TestCase to test the internal functionality of org.kmdsql.jdbc2.DatabaseMetaData's various
  * properties. Methods which return a ResultSet are tested elsewhere. This avoids a complicated
  * setUp/tearDown for something like assertTrue(dbmd.nullPlusNonNullIsNull());
  */
@@ -190,7 +190,7 @@ public class DatabaseMetaDataPropertiesTest {
 
   @Test
   public void testDbProductDetails() throws SQLException {
-    assertTrue(con instanceof org.postgresql.PGConnection);
+    assertTrue(con instanceof org.kmdsql.PGConnection);
 
     DatabaseMetaData dbmd = con.getMetaData();
     assertNotNull(dbmd);
@@ -207,9 +207,9 @@ public class DatabaseMetaDataPropertiesTest {
     assertNotNull(dbmd);
 
     assertEquals("PostgreSQL JDBC Driver", dbmd.getDriverName());
-    assertEquals(org.postgresql.util.DriverInfo.DRIVER_VERSION, dbmd.getDriverVersion());
-    assertEquals(new org.postgresql.Driver().getMajorVersion(), dbmd.getDriverMajorVersion());
-    assertEquals(new org.postgresql.Driver().getMinorVersion(), dbmd.getDriverMinorVersion());
+    assertEquals(org.kmdsql.util.DriverInfo.DRIVER_VERSION, dbmd.getDriverVersion());
+    assertEquals(new org.kmdsql.Driver().getMajorVersion(), dbmd.getDriverMajorVersion());
+    assertEquals(new org.kmdsql.Driver().getMinorVersion(), dbmd.getDriverMinorVersion());
     assertTrue(dbmd.getJDBCMajorVersion() >= 4);
     assertTrue(dbmd.getJDBCMinorVersion() >= 0);
   }

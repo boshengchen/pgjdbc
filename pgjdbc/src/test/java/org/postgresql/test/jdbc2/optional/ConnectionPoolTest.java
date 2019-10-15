@@ -3,17 +3,17 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2.optional;
+package org.kmdsql.test.jdbc2.optional;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import org.postgresql.PGConnection;
-import org.postgresql.core.ServerVersion;
-import org.postgresql.ds.PGConnectionPoolDataSource;
-import org.postgresql.jdbc2.optional.ConnectionPool;
-import org.postgresql.test.TestUtil;
+import org.kmdsql.PGConnection;
+import org.kmdsql.core.ServerVersion;
+import org.kmdsql.ds.PGConnectionPoolDataSource;
+import org.kmdsql.jdbc2.optional.ConnectionPool;
+import org.kmdsql.test.TestUtil;
 
 import org.junit.Assume;
 import org.junit.Test;
@@ -443,13 +443,13 @@ public class ConnectionPoolTest extends BaseDataSourceTest {
       con = pc.getConnection();
 
       Statement s = con.createStatement();
-      boolean b = ((org.postgresql.PGStatement) s).isUseServerPrepare();
+      boolean b = ((org.kmdsql.PGStatement) s).isUseServerPrepare();
 
       PreparedStatement ps = con.prepareStatement("select 'x'");
-      b = ((org.postgresql.PGStatement) ps).isUseServerPrepare();
+      b = ((org.kmdsql.PGStatement) ps).isUseServerPrepare();
 
       CallableStatement cs = con.prepareCall("select 'x'");
-      b = ((org.postgresql.PGStatement) cs).isUseServerPrepare();
+      b = ((org.kmdsql.PGStatement) cs).isUseServerPrepare();
 
     } catch (SQLException e) {
       fail(e.getMessage());

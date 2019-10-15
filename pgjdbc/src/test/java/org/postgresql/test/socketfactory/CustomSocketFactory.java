@@ -3,7 +3,7 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.socketfactory;
+package org.kmdsql.test.socketfactory;
 
 import java.io.IOException;
 import java.net.InetAddress;

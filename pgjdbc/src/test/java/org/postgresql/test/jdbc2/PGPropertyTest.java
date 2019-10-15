@@ -3,7 +3,7 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -12,13 +12,13 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 
-import org.postgresql.Driver;
-import org.postgresql.PGProperty;
-import org.postgresql.ds.PGSimpleDataSource;
-import org.postgresql.ds.common.BaseDataSource;
-import org.postgresql.jdbc.AutoSave;
-import org.postgresql.test.TestUtil;
-import org.postgresql.util.URLCoder;
+import org.kmdsql.Driver;
+import org.kmdsql.PGProperty;
+import org.kmdsql.ds.PGSimpleDataSource;
+import org.kmdsql.ds.common.BaseDataSource;
+import org.kmdsql.jdbc.AutoSave;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.util.URLCoder;
 
 import org.junit.After;
 import org.junit.Before;
@@ -94,7 +94,7 @@ public class PGPropertyTest {
   public void testDriverGetPropertyInfo() {
     Driver driver = new Driver();
     DriverPropertyInfo[] infos = driver.getPropertyInfo(
-        "jdbc:postgresql://localhost/test?user=fred&password=secret&ssl=true",
+        "jdbc:kmdsql://localhost/test?user=fred&password=secret&ssl=true",
         // this is the example we give in docs
         new Properties());
     for (DriverPropertyInfo info : infos) {
@@ -159,7 +159,7 @@ public class PGPropertyTest {
   public void testOverWriteDSProperties() throws Exception {
     PGSimpleDataSource dataSource = new PGSimpleDataSource();
     dataSource.setAutosave(AutoSave.CONSERVATIVE);
-    dataSource.setURL("jdbc:postgresql://localhost:5432/postgres");
+    dataSource.setURL("jdbc:kmdsql://localhost:5432/postgres");
     assertSame(dataSource.getAutosave(),AutoSave.CONSERVATIVE);
   }
 
@@ -217,7 +217,7 @@ public class PGPropertyTest {
     String databaseName = "d&a%ta+base";
     String userName = "&u%ser";
     String password = "p%a&s^s#w!o@r*";
-    String url = "jdbc:postgresql://"
+    String url = "jdbc:kmdsql://"
         + "localhost" + ":" + 5432 + "/"
         + URLCoder.encode(databaseName)
         + "?user=" + URLCoder.encode(userName)

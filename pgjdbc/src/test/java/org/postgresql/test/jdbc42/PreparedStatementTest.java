@@ -3,11 +3,11 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc42;
+package org.kmdsql.test.jdbc42;
 
-import org.postgresql.PGProperty;
-import org.postgresql.test.TestUtil;
-import org.postgresql.test.jdbc2.BaseTest4;
+import org.kmdsql.PGProperty;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.test.jdbc2.BaseTest4;
 
 import org.junit.Assert;
 import org.junit.Test;

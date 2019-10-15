@@ -3,26 +3,26 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
-import org.postgresql.core.CommandCompleteParserNegativeTest;
-import org.postgresql.core.CommandCompleteParserTest;
-import org.postgresql.core.OidToStringTest;
-import org.postgresql.core.OidValueOfTest;
-import org.postgresql.core.ParserTest;
-import org.postgresql.core.ReturningParserTest;
-import org.postgresql.core.v3.V3ParameterListTests;
-import org.postgresql.jdbc.DeepBatchedInsertStatementTest;
-import org.postgresql.jdbc.PrimitiveArraySupportTest;
-import org.postgresql.test.core.JavaVersionTest;
-import org.postgresql.test.core.NativeQueryBindLengthTest;
-import org.postgresql.test.core.OptionsPropertyTest;
-import org.postgresql.test.util.ExpressionPropertiesTest;
-import org.postgresql.test.util.HostSpecTest;
-import org.postgresql.test.util.LruCacheTest;
-import org.postgresql.test.util.ServerVersionParseTest;
-import org.postgresql.test.util.ServerVersionTest;
-import org.postgresql.util.ReaderInputStreamTest;
+import org.kmdsql.core.CommandCompleteParserNegativeTest;
+import org.kmdsql.core.CommandCompleteParserTest;
+import org.kmdsql.core.OidToStringTest;
+import org.kmdsql.core.OidValueOfTest;
+import org.kmdsql.core.ParserTest;
+import org.kmdsql.core.ReturningParserTest;
+import org.kmdsql.core.v3.V3ParameterListTests;
+import org.kmdsql.jdbc.DeepBatchedInsertStatementTest;
+import org.kmdsql.jdbc.PrimitiveArraySupportTest;
+import org.kmdsql.test.core.JavaVersionTest;
+import org.kmdsql.test.core.NativeQueryBindLengthTest;
+import org.kmdsql.test.core.OptionsPropertyTest;
+import org.kmdsql.test.util.ExpressionPropertiesTest;
+import org.kmdsql.test.util.HostSpecTest;
+import org.kmdsql.test.util.LruCacheTest;
+import org.kmdsql.test.util.ServerVersionParseTest;
+import org.kmdsql.test.util.ServerVersionTest;
+import org.kmdsql.util.ReaderInputStreamTest;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

@@ -3,21 +3,21 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import org.postgresql.PGConnection;
-import org.postgresql.copy.CopyIn;
-import org.postgresql.copy.CopyManager;
-import org.postgresql.copy.CopyOut;
-import org.postgresql.copy.PGCopyOutputStream;
-import org.postgresql.core.ServerVersion;
-import org.postgresql.test.TestUtil;
-import org.postgresql.util.PSQLState;
+import org.kmdsql.PGConnection;
+import org.kmdsql.copy.CopyIn;
+import org.kmdsql.copy.CopyManager;
+import org.kmdsql.copy.CopyOut;
+import org.kmdsql.copy.PGCopyOutputStream;
+import org.kmdsql.core.ServerVersion;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.util.PSQLState;
 
 import org.junit.After;
 import org.junit.Before;

@@ -3,7 +3,7 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.core.v3;
+package org.kmdsql.core.v3;
 
 import static org.junit.Assert.assertEquals;
 

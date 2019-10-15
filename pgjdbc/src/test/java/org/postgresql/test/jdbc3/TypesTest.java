@@ -3,15 +3,15 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc3;
+package org.kmdsql.test.jdbc3;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
-import org.postgresql.jdbc.PreferQueryMode;
-import org.postgresql.test.jdbc2.BaseTest4;
+import org.kmdsql.jdbc.PreferQueryMode;
+import org.kmdsql.test.jdbc2.BaseTest4;
 
 import org.junit.Test;
 

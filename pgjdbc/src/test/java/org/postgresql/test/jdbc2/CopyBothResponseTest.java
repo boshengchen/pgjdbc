@@ -3,21 +3,21 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-import org.postgresql.PGConnection;
-import org.postgresql.PGProperty;
-import org.postgresql.copy.CopyDual;
-import org.postgresql.copy.CopyManager;
-import org.postgresql.core.BaseConnection;
-import org.postgresql.core.ServerVersion;
-import org.postgresql.replication.LogSequenceNumber;
-import org.postgresql.test.TestUtil;
-import org.postgresql.test.util.rules.ServerVersionRule;
-import org.postgresql.test.util.rules.annotation.HaveMinimalServerVersion;
+import org.kmdsql.PGConnection;
+import org.kmdsql.PGProperty;
+import org.kmdsql.copy.CopyDual;
+import org.kmdsql.copy.CopyManager;
+import org.kmdsql.core.BaseConnection;
+import org.kmdsql.core.ServerVersion;
+import org.kmdsql.replication.LogSequenceNumber;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.test.util.rules.ServerVersionRule;
+import org.kmdsql.test.util.rules.annotation.HaveMinimalServerVersion;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.After;

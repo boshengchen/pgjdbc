@@ -3,9 +3,9 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.core;
+package org.kmdsql.core;
 
-import org.postgresql.util.PSQLException;
+import org.kmdsql.util.PSQLException;
 
 import org.junit.Assert;
 import org.junit.Test;

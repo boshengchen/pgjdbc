@@ -3,12 +3,12 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import org.postgresql.test.TestUtil;
+import org.kmdsql.test.TestUtil;
 
 import org.junit.Assume;
 import org.junit.Before;
@@ -23,7 +23,7 @@ import java.util.Properties;
 public class ConnectTimeoutTest {
   // The IP below is non-routable (see http://stackoverflow.com/a/904609/1261287)
   private static final String UNREACHABLE_HOST = "10.255.255.1";
-  private static final String UNREACHABLE_URL = "jdbc:postgresql://" + UNREACHABLE_HOST + ":5432/test";
+  private static final String UNREACHABLE_URL = "jdbc:kmdsql://" + UNREACHABLE_HOST + ":5432/test";
   private static final int CONNECT_TIMEOUT = 5;
 
   @Before

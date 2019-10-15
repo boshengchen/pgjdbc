@@ -3,7 +3,7 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.util;
+package org.kmdsql.test.util;
 
 import java.util.Hashtable;
 

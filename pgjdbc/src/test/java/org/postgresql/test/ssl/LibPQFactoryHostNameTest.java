@@ -3,10 +3,10 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.ssl;
+package org.kmdsql.test.ssl;
 
-import org.postgresql.ssl.PGjdbcHostnameVerifier;
-import org.postgresql.ssl.jdbc4.LibPQFactory;
+import org.kmdsql.ssl.PGjdbcHostnameVerifier;
+import org.kmdsql.ssl.jdbc4.LibPQFactory;
 
 import org.junit.Assert;
 import org.junit.Test;

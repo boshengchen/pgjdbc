@@ -3,9 +3,9 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.ssl;
+package org.kmdsql.test.ssl;
 
-import org.postgresql.test.TestUtil;
+import org.kmdsql.test.TestUtil;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -58,11 +58,11 @@ public class SingleCertValidatingFactoryTestSuite {
     }
 
     return Arrays.asList(new Object[][]{
-        {"jdbc:postgresql://localhost:5432/test"},
-        //        {"jdbc:postgresql://localhost:10090/test"},
-        //        {"jdbc:postgresql://localhost:10091/test"},
-        //        {"jdbc:postgresql://localhost:10092/test"},
-        //        {"jdbc:postgresql://localhost:10093/test"},
+        {"jdbc:kmdsql://localhost:5432/test"},
+        //        {"jdbc:kmdsql://localhost:10090/test"},
+        //        {"jdbc:kmdsql://localhost:10091/test"},
+        //        {"jdbc:kmdsql://localhost:10092/test"},
+        //        {"jdbc:kmdsql://localhost:10093/test"},
     });
   }
 
@@ -201,7 +201,7 @@ public class SingleCertValidatingFactoryTestSuite {
   public void connectSSLWithValidationWrongCert() throws SQLException, IOException {
     Properties info = new Properties();
     info.setProperty("ssl", "true");
-    info.setProperty("sslfactory", "org.postgresql.ssl.SingleCertValidatingFactory");
+    info.setProperty("sslfactory", "org.kmdsql.ssl.SingleCertValidatingFactory");
     info.setProperty("sslfactoryarg", "file:" + badServerCertPath);
     testConnect(info, true, javax.net.ssl.SSLHandshakeException.class);
   }
@@ -210,7 +210,7 @@ public class SingleCertValidatingFactoryTestSuite {
   public void fileCertInvalid() throws SQLException, IOException {
     Properties info = new Properties();
     info.setProperty("ssl", "true");
-    info.setProperty("sslfactory", "org.postgresql.ssl.SingleCertValidatingFactory");
+    info.setProperty("sslfactory", "org.kmdsql.ssl.SingleCertValidatingFactory");
     info.setProperty("sslfactoryarg", "file:foo/bar/baz");
     testConnect(info, true, java.io.FileNotFoundException.class);
   }
@@ -219,7 +219,7 @@ public class SingleCertValidatingFactoryTestSuite {
   public void stringCertInvalid() throws SQLException, IOException {
     Properties info = new Properties();
     info.setProperty("ssl", "true");
-    info.setProperty("sslfactory", "org.postgresql.ssl.SingleCertValidatingFactory");
+    info.setProperty("sslfactory", "org.kmdsql.ssl.SingleCertValidatingFactory");
     info.setProperty("sslfactoryarg", "foobar!");
     testConnect(info, true, java.security.GeneralSecurityException.class);
   }
@@ -233,7 +233,7 @@ public class SingleCertValidatingFactoryTestSuite {
   public void connectSSLWithValidationProperCertFile() throws SQLException, IOException {
     Properties info = new Properties();
     info.setProperty("ssl", "true");
-    info.setProperty("sslfactory", "org.postgresql.ssl.SingleCertValidatingFactory");
+    info.setProperty("sslfactory", "org.kmdsql.ssl.SingleCertValidatingFactory");
     info.setProperty("sslfactoryarg", "file:" + goodServerCertPath);
     testConnect(info, true);
   }
@@ -247,7 +247,7 @@ public class SingleCertValidatingFactoryTestSuite {
   public void connectSSLWithValidationProperCertString() throws SQLException, IOException {
     Properties info = new Properties();
     info.setProperty("ssl", "true");
-    info.setProperty("sslfactory", "org.postgresql.ssl.SingleCertValidatingFactory");
+    info.setProperty("sslfactory", "org.kmdsql.ssl.SingleCertValidatingFactory");
     info.setProperty("sslfactoryarg", getGoodServerCert());
     testConnect(info, true);
   }
@@ -259,14 +259,14 @@ public class SingleCertValidatingFactoryTestSuite {
   @Test
   public void connectSSLWithValidationProperCertSysProp() throws SQLException, IOException {
     // System property name we're using for the SSL cert. This can be anything.
-    String sysPropName = "org.postgresql.jdbc.test.sslcert";
+    String sysPropName = "org.kmdsql.jdbc.test.sslcert";
 
     try {
       System.setProperty(sysPropName, getGoodServerCert());
 
       Properties info = new Properties();
       info.setProperty("ssl", "true");
-      info.setProperty("sslfactory", "org.postgresql.ssl.SingleCertValidatingFactory");
+      info.setProperty("sslfactory", "org.kmdsql.ssl.SingleCertValidatingFactory");
       info.setProperty("sslfactoryarg", "sys:" + sysPropName);
       testConnect(info, true);
     } finally {
@@ -295,7 +295,7 @@ public class SingleCertValidatingFactoryTestSuite {
 
     Properties info = new Properties();
     info.setProperty("ssl", "true");
-    info.setProperty("sslfactory", "org.postgresql.ssl.SingleCertValidatingFactory");
+    info.setProperty("sslfactory", "org.kmdsql.ssl.SingleCertValidatingFactory");
     info.setProperty("sslfactoryarg", "env:" + envVarName);
     testConnect(info, true);
   }
@@ -307,14 +307,14 @@ public class SingleCertValidatingFactoryTestSuite {
   @Test
   public void connectSSLWithValidationMissingSysProp() throws SQLException, IOException {
     // System property name we're using for the SSL cert. This can be anything.
-    String sysPropName = "org.postgresql.jdbc.test.sslcert";
+    String sysPropName = "org.kmdsql.jdbc.test.sslcert";
 
     try {
       System.setProperty(sysPropName, "");
 
       Properties info = new Properties();
       info.setProperty("ssl", "true");
-      info.setProperty("sslfactory", "org.postgresql.ssl.SingleCertValidatingFactory");
+      info.setProperty("sslfactory", "org.kmdsql.ssl.SingleCertValidatingFactory");
       info.setProperty("sslfactoryarg", "sys:" + sysPropName);
       testConnect(info, true, java.security.GeneralSecurityException.class);
     } finally {
@@ -339,7 +339,7 @@ public class SingleCertValidatingFactoryTestSuite {
 
     Properties info = new Properties();
     info.setProperty("ssl", "true");
-    info.setProperty("sslfactory", "org.postgresql.ssl.SingleCertValidatingFactory");
+    info.setProperty("sslfactory", "org.kmdsql.ssl.SingleCertValidatingFactory");
     info.setProperty("sslfactoryarg", "env:" + envVarName);
     testConnect(info, true, java.security.GeneralSecurityException.class);
   }

@@ -3,10 +3,10 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
-import org.postgresql.jdbc.PgConnection;
-import org.postgresql.jdbc.PgDatabaseMetaData;
+import org.kmdsql.jdbc.PgConnection;
+import org.kmdsql.jdbc.PgDatabaseMetaData;
 
 import org.junit.Test;
 

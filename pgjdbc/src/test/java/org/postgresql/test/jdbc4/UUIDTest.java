@@ -3,16 +3,16 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc4;
+package org.kmdsql.test.jdbc4;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import org.postgresql.core.ServerVersion;
-import org.postgresql.jdbc.PreferQueryMode;
-import org.postgresql.test.TestUtil;
-import org.postgresql.test.jdbc2.BaseTest4;
-import org.postgresql.util.PSQLState;
+import org.kmdsql.core.ServerVersion;
+import org.kmdsql.jdbc.PreferQueryMode;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.test.jdbc2.BaseTest4;
+import org.kmdsql.util.PSQLState;
 
 import org.junit.Assert;
 import org.junit.Test;

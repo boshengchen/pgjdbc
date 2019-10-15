@@ -3,17 +3,17 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.jdbc;
+package org.kmdsql.jdbc;
 
 import static org.junit.Assert.assertEquals;
 
-import org.postgresql.PGProperty;
-import org.postgresql.core.ParameterList;
-import org.postgresql.core.Query;
-import org.postgresql.core.v3.BatchedQuery;
-import org.postgresql.test.TestUtil;
-import org.postgresql.test.jdbc2.BaseTest4;
-import org.postgresql.test.jdbc2.BatchExecuteTest;
+import org.kmdsql.PGProperty;
+import org.kmdsql.core.ParameterList;
+import org.kmdsql.core.Query;
+import org.kmdsql.core.v3.BatchedQuery;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.test.jdbc2.BaseTest4;
+import org.kmdsql.test.jdbc2.BatchExecuteTest;
 
 import org.junit.Test;
 
@@ -311,7 +311,7 @@ public class DeepBatchedInsertStatementTest extends BaseTest4 {
    */
   private byte[] getEncodedStatementName(BatchedQuery bqd)
       throws Exception {
-    Class<?> clazz = Class.forName("org.postgresql.core.v3.SimpleQuery");
+    Class<?> clazz = Class.forName("org.kmdsql.core.v3.SimpleQuery");
     Method mESN = clazz.getDeclaredMethod("getEncodedStatementName");
     mESN.setAccessible(true);
     return (byte[]) mESN.invoke(bqd);

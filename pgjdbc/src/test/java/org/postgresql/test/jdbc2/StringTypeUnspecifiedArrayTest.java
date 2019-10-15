@@ -3,10 +3,10 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
-import org.postgresql.PGProperty;
-import org.postgresql.geometric.PGbox;
+import org.kmdsql.PGProperty;
+import org.kmdsql.geometric.PGbox;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -3,9 +3,9 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.util;
+package org.kmdsql.test.util;
 
-import org.postgresql.util.ExpressionProperties;
+import org.kmdsql.util.ExpressionProperties;
 
 import org.junit.Assert;
 import org.junit.Test;

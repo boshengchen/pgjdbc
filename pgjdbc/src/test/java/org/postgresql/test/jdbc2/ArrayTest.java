@@ -3,19 +3,19 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-import org.postgresql.PGConnection;
-import org.postgresql.core.BaseConnection;
-import org.postgresql.geometric.PGbox;
-import org.postgresql.geometric.PGpoint;
-import org.postgresql.jdbc.PgArray;
-import org.postgresql.jdbc.PreferQueryMode;
-import org.postgresql.test.TestUtil;
-import org.postgresql.util.PSQLException;
+import org.kmdsql.PGConnection;
+import org.kmdsql.core.BaseConnection;
+import org.kmdsql.geometric.PGbox;
+import org.kmdsql.geometric.PGpoint;
+import org.kmdsql.jdbc.PgArray;
+import org.kmdsql.jdbc.PreferQueryMode;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.util.PSQLException;
 
 import org.junit.Assert;
 import org.junit.Test;

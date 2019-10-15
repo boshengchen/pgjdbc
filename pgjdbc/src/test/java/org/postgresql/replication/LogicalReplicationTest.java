@@ -3,22 +3,22 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.replication;
+package org.kmdsql.replication;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.fail;
 import static org.junit.Assume.assumeThat;
 
-import org.postgresql.PGConnection;
-import org.postgresql.PGProperty;
-import org.postgresql.core.BaseConnection;
-import org.postgresql.core.ServerVersion;
-import org.postgresql.test.TestUtil;
-import org.postgresql.test.util.rules.ServerVersionRule;
-import org.postgresql.test.util.rules.annotation.HaveMinimalServerVersion;
-import org.postgresql.util.PSQLException;
-import org.postgresql.util.PSQLState;
+import org.kmdsql.PGConnection;
+import org.kmdsql.PGProperty;
+import org.kmdsql.core.BaseConnection;
+import org.kmdsql.core.ServerVersion;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.test.util.rules.ServerVersionRule;
+import org.kmdsql.test.util.rules.annotation.HaveMinimalServerVersion;
+import org.kmdsql.util.PSQLException;
+import org.kmdsql.util.PSQLState;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.After;

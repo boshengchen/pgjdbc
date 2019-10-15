@@ -3,7 +3,7 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.xa;
+package org.kmdsql.test.xa;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -11,9 +11,9 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 import static org.junit.Assume.assumeTrue;
 
-import org.postgresql.test.TestUtil;
-import org.postgresql.test.jdbc2.optional.BaseDataSourceTest;
-import org.postgresql.xa.PGXADataSource;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.test.jdbc2.optional.BaseDataSourceTest;
+import org.kmdsql.xa.PGXADataSource;
 
 import org.junit.After;
 import org.junit.Before;

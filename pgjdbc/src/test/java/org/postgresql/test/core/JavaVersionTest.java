@@ -3,9 +3,9 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.core;
+package org.kmdsql.test.core;
 
-import org.postgresql.core.JavaVersion;
+import org.kmdsql.core.JavaVersion;
 
 import org.junit.Assert;
 import org.junit.Test;

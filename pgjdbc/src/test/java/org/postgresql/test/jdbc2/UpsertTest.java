@@ -3,12 +3,12 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
 import static org.junit.Assert.assertEquals;
 
-import org.postgresql.core.ServerVersion;
-import org.postgresql.test.TestUtil;
+import org.kmdsql.core.ServerVersion;
+import org.kmdsql.test.TestUtil;
 
 import org.junit.Assert;
 import org.junit.Test;

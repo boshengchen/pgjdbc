@@ -3,11 +3,11 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
-import org.postgresql.PGConnection;
-import org.postgresql.core.ServerVersion;
-import org.postgresql.test.TestUtil;
+import org.kmdsql.PGConnection;
+import org.kmdsql.core.ServerVersion;
+import org.kmdsql.test.TestUtil;
 
 import org.hamcrest.core.StringStartsWith;
 

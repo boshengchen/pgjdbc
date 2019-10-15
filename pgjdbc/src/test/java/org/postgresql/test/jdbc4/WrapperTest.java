@@ -3,17 +3,17 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc4;
+package org.kmdsql.test.jdbc4;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import org.postgresql.PGConnection;
-import org.postgresql.PGStatement;
-import org.postgresql.ds.PGSimpleDataSource;
-import org.postgresql.test.TestUtil;
+import org.kmdsql.PGConnection;
+import org.kmdsql.PGStatement;
+import org.kmdsql.ds.PGSimpleDataSource;
+import org.kmdsql.test.TestUtil;
 
 import org.junit.After;
 import org.junit.Before;

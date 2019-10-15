@@ -3,14 +3,14 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2.optional;
+package org.kmdsql.test.jdbc2.optional;
 
 import static org.junit.Assert.assertEquals;
-import static org.postgresql.Driver.parseURL;
+import static org.kmdsql.Driver.parseURL;
 
-import org.postgresql.PGProperty;
-import org.postgresql.jdbc2.optional.SimpleDataSource;
-import org.postgresql.test.TestUtil;
+import org.kmdsql.PGProperty;
+import org.kmdsql.jdbc2.optional.SimpleDataSource;
+import org.kmdsql.test.TestUtil;
 
 import org.junit.Test;
 
@@ -27,7 +27,7 @@ public class SimpleDataSourceWithSetURLTest extends BaseDataSourceTest {
   protected void initializeDataSource() {
     if (bds == null) {
       bds = new SimpleDataSource();
-      bds.setURL(String.format("jdbc:postgresql://%s:%d/%s?prepareThreshold=%d&loggerLevel=%s", TestUtil.getServer(), TestUtil.getPort(), TestUtil.getDatabase(), TestUtil.getPrepareThreshold(),
+      bds.setURL(String.format("jdbc:kmdsql://%s:%d/%s?prepareThreshold=%d&loggerLevel=%s", TestUtil.getServer(), TestUtil.getPort(), TestUtil.getDatabase(), TestUtil.getPrepareThreshold(),
               TestUtil.getLogLevel()));
       bds.setUser(TestUtil.getUser());
       bds.setPassword(TestUtil.getPassword());

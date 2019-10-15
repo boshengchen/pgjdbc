@@ -3,13 +3,13 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
-import org.postgresql.PGConnection;
-import org.postgresql.PGProperty;
-import org.postgresql.core.Version;
-import org.postgresql.jdbc.PreferQueryMode;
-import org.postgresql.test.TestUtil;
+import org.kmdsql.PGConnection;
+import org.kmdsql.PGProperty;
+import org.kmdsql.core.Version;
+import org.kmdsql.jdbc.PreferQueryMode;
+import org.kmdsql.test.TestUtil;
 
 import org.junit.After;
 import org.junit.Assume;

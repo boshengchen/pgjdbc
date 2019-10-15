@@ -3,15 +3,15 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc3;
+package org.kmdsql.test.jdbc3;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import org.postgresql.core.NativeQuery;
-import org.postgresql.core.Parser;
-import org.postgresql.core.SqlCommandType;
+import org.kmdsql.core.NativeQuery;
+import org.kmdsql.core.Parser;
+import org.kmdsql.core.SqlCommandType;
 
 import org.junit.Test;
 

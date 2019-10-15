@@ -3,10 +3,10 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.core;
+package org.kmdsql.test.core;
 
-import org.postgresql.PGProperty;
-import org.postgresql.test.TestUtil;
+import org.kmdsql.PGProperty;
+import org.kmdsql.test.TestUtil;
 
 import org.junit.After;
 import org.junit.Assert;

@@ -3,19 +3,19 @@
  * See the LICENSE file in the project root for more information.
  */
 
-package org.postgresql.test.jdbc2;
+package org.kmdsql.test.jdbc2;
 
-import org.postgresql.PGConnection;
-import org.postgresql.PGProperty;
-import org.postgresql.core.BaseConnection;
-import org.postgresql.core.ResultHandler;
-import org.postgresql.core.ServerVersion;
-import org.postgresql.core.TransactionState;
-import org.postgresql.jdbc.AutoSave;
-import org.postgresql.jdbc.PgConnection;
-import org.postgresql.jdbc.PreferQueryMode;
-import org.postgresql.test.TestUtil;
-import org.postgresql.util.PSQLState;
+import org.kmdsql.PGConnection;
+import org.kmdsql.PGProperty;
+import org.kmdsql.core.BaseConnection;
+import org.kmdsql.core.ResultHandler;
+import org.kmdsql.core.ServerVersion;
+import org.kmdsql.core.TransactionState;
+import org.kmdsql.jdbc.AutoSave;
+import org.kmdsql.jdbc.PgConnection;
+import org.kmdsql.jdbc.PreferQueryMode;
+import org.kmdsql.test.TestUtil;
+import org.kmdsql.util.PSQLState;
 
 import org.junit.Assert;
 import org.junit.Assume;
@@ -56,8 +56,8 @@ public class AutoRollbackTestSuite extends BaseTest4 {
     /**
      * Executes DEALLOCATE ALL.
      * Mitigation:
-     *  1) QueryExecutor tracks "DEALLOCATE ALL" responses ({@see org.postgresql.core.QueryExecutor#setFlushCacheOnDeallocate(boolean)}
-     *  2) QueryExecutor tracks "prepared statement name is invalid" and unprepares relevant statements ({@link org.postgresql.core.v3.QueryExecutorImpl#processResults(ResultHandler, int)}
+     *  1) QueryExecutor tracks "DEALLOCATE ALL" responses ({@see org.kmdsql.core.QueryExecutor#setFlushCacheOnDeallocate(boolean)}
+     *  2) QueryExecutor tracks "prepared statement name is invalid" and unprepares relevant statements ({@link org.kmdsql.core.v3.QueryExecutorImpl#processResults(ResultHandler, int)}
      *  3) "autosave in (always, conservative)"
      *  4) Non-transactional cases are healed by retry (when no transaction present, just retry is possible)
      */
